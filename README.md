@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# EDUCALIA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Una herramienta todo en uno, Educalia busca ser una ayuda para los estudiantes que no puedan acceder a la educación superior en Guatemala. 
+- 
+- Ofrecer una solución completa de servicios de preparación gratuita para preparse para la universidad, ademas de ofrecer foros en los cuales se pueden encontrar ofertas de becas, trabajo y voluntariado. 
 
-## Available Scripts
 
-In the project directory, you can run:
+###Characters
 
-### `npm start`
+- Acceso a cursos de todo tipo
+- Foros
+- Oportunidades de becas y voluntariados
+- Publicación de proyectos personales
+- Agenda personal para organizarse en los estudios
+- Perfil con información online 
+- Funciones offline
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Instalación del programa
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Educalia es una aplicación pensada principalmente para funcionar en computadoras de bajos recursos con windows y raspberry pi con linux
 
-### `npm run build`
+- Para comenzar la instalación primero se debe dirigir a la carpeta de proyecto e instalar todos los paquetes
+`$ npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Para inicar la aplicación en el navegador
+`$ npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Para inicar la aplicación en ecritorio
+`$ npm run electron-dev`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Para generar un ejecutable en windows
+`$ electron-packager . --platform=win32 --arch=x64`
 
-### `npm run eject`
+- Para generar un ejecutable en linux
+`$ electron-packager`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+###Creditos
+Para el desarrollo de esta aplicación de utilizaron las siguientes tecnologias
+- React Js
+- Electron
+- Bulma
+- Unspash
+	- Photo by <a href="shorturl.at/pxHU2">Joel Muniz</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/pCFV9">Sangga Rima Roman Selia</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/emzO8">Redd</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/xyDH3">Brett Jordan</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/crxyI">Simone Secci</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/bjx07">Alessandro Bianchi</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+	- Photo by <a href="shorturl.at/eCY05">Chris Liverani</a> on <a href="shorturl.at/hBJ09">Unsplash</a>
+- <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
