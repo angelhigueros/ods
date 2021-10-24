@@ -1,0 +1,371 @@
+/* Navbar */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: #24252a;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .NavBar_cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .NavBar_cart > .cart {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+  
+  .Navbar-menu-container {
+    width: 130px;
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+  
+  .btn_cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  /* Navbar options */
+
+  .NavbarMenu-container {
+    width: 100%;
+    height: 110vh;
+    background-color: #00000049;
+    position: absolute;
+    z-index: 10000000;
+  }
+  
+  .NavbarMenu-menu {
+    width: 400px !important;
+    margin-top: 90px;
+  }
+  
+  .NavbarMenu-menu:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 25px 25px;
+    border-style: solid;
+    border-color: transparent transparent red;
+  }
+  
+  
+  .NavbarMenu-menu-card{
+      border-radius: 15px;
+  }
+  
+  .NavbarMenu-menu a{
+      color: #1f4068;
+  }
+
+  /* Loader */
+
+  .preloader-container {
+    background-color: #24252a;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 110vh;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .container-preloader {
+    height: 370px;
+    width: 370px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .moon {
+    background-color: #39beff;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  .crater {
+    background-color: #31b4ff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .crater:before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 2px #1ca4f9;
+    top: 2px;
+    left: 7px;
+  }
+  
+  .c1 {
+    top: 27px;
+    left: 90px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  
+  .c2 {
+    transform: scale(0.6);
+    bottom: 15px;
+    left: 61px;
+  }
+  
+  .c3 {
+    transform: scale(0.75);
+    left: 15px;
+  }
+  
+  .c4 {
+    transform: scale(1.18);
+    left: 107px;
+    top: 32px;
+  }
+  
+  .c5 {
+    transform: scale(0.67);
+    left: 33px;
+    bottom: 4px;
+  }
+  
+  .shadow {
+    height: 190px;
+    width: 190px;
+    box-shadow: 21px 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    bottom: 157.5px;
+    right: 46px;
+  }
+  
+  .blush {
+    height: 7.5px;
+    width: 7.5px;
+    background-color: #1ca4f9;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .b1 {
+    bottom: 273px;
+    left: 50px;
+  }
+  
+  .b2 {
+    bottom: 281px;
+    left: 115px;
+  }
+  
+  .orbit {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: rotate 5s infinite linear;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rocket {
+    background-color: #fafcf7;
+    height: 50px;
+    width: 25px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: -11px;
+    top: 115px;
+  }
+  
+  .rocket:before {
+    position: absolute;
+    content: '';
+    background-color: #39beff;
+    height: 20px;
+    width: 55px;
+    right: -15px;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .rocket:after {
+    position: absolute;
+    content: '';
+    background-color: #39beff;
+    height: 4px;
+    width: 15px;
+    border-radius: 0 0 2px 2px;
+    bottom: -4px;
+    left: 4.63px;
+  }
+  
+  .window {
+    height: 10px;
+    width: 10px;
+    background-color: #151845;
+    border: 2px solid #b8d2ec;
+    border-radius: 50%;
+    position: relative;
+    top: 17px;
+    left: 5px;
+  }
+  

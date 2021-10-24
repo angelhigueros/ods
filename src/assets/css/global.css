@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif !important;
+  zoom: 98.2%;
+}
+
+@media only screen and (max-width: 850px) {
+  * {
+    zoom: 96%;
+  }
+
+  #app {
+    overflow-x: hidden;
+  }
+}
+
+/* SCROLLBAR */
+/* Tamaño del scroll */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Estilos barra (thumb) de scroll */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+.scrollbar::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track:hover,
+.scrollbar::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
+.section-body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-bottom: 300px;
+}

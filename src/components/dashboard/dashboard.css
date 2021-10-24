@@ -1,0 +1,58 @@
+/* Dashboard */
+
+/*  FormCard */
+.FormCard_favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.FormCard_favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+/* UserCard */
+
+.UserCard-container {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.UserCard-container div {
+  padding-left: 30px;
+}
+
+.UserCard-container figure {
+  cursor: pointer;
+}
+
+.UserCard-container section span {
+  font-size: 14px;
+}
+
+/* Library */
+
+.Library-container {
+  margin-top: 50px;
+}
+
+.LibraryItem-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.LibraryItem-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}

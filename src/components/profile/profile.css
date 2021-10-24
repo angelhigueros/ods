@@ -1,0 +1,22 @@
+
+
+/* Hero */
+
+.HeroUser-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .HeroUser-user-icon {
+    margin-top: -170px;
+    width: 100%;
+  }
+  
+  .HeroUser-user-icon img {
+    width: 200px;
+  }
+  
+  
+  .HeroUser-Buttons{
+    margin-top: -50px;
+  }
