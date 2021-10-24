@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
 
 //Design
-import { AiFillHeart } from 'react-icons/ai'
-import './dashboard.css'
+import "./dashboard.css";
+import question from '../../assets/img/pregunta.jpg'
+import { Link } from "react-router-dom";
 
-export const ForumCard = () => {
+export const ForumCard = ({ title, date, user, name, id }) => {
   return (
     <React.Fragment>
-      <a href="/hilo/10" class="box">
+      <Link to={`/hilo/${id}`} class="box">
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
               <img
-                src="https://bulma.io/images/placeholders/128x128.png"
+                src={question}
                 alt="Image"
               />
             </figure>
@@ -20,27 +21,22 @@ export const ForumCard = () => {
           <div class="media-content">
             <div class="content">
               <p className="has-text-dark">
-                <strong>Nombre completo</strong> <small>@usuario</small>
-                <small>12 horas</small>
+                <strong>{name}</strong> <small>@{user}</small> 
+                <small>{date}</small>
                 <br />
-                <span className="subtitle is-3">Titulo</span>
+                <span className="subtitle is-3">{title}</span>
                 <br />
                 <br />
                 <div class="tags">
                   <span class="tag is-dark">One</span>
                   <span class="tag is-success">Two</span>
                   <span class="tag is-info">Three</span>
-                  <span class="tag is-warning">Four</span>
-                  <span class="tag is-light">Five</span>
-                  <span class="tag is-link">Six</span>
-                  <span class="tag is-primary">Seven</span>
                 </div>
               </p>
             </div>
           </div>
-          
         </article>
-      </a>
+      </Link>
     </React.Fragment>
-  )
-}
+  );
+};

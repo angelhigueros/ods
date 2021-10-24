@@ -3,23 +3,27 @@ import { ForumCard } from "./ForumCard";
 
 //Design
 import "./dashboard.css";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { Link } from "react-router-dom";
 
 export const ForumCardList = () => {
+  const [entries, setEntry] = useLocalStorage("foro", []);
+
   return (
-    <React.Fragment>
+    <>
       <div className="container ForumCardList_container">
         {/* Filters */}
         <div className="columns">
           <div className="column is-4">
-            <a href="/foro/nuevo" className="button is-dark is-fullwidth">
+            <Link to="/foro/nuevo" className="button is-dark is-fullwidth">
               Iniciar foro
-            </a>
+            </Link>
           </div>
         </div>
         {/* End Filters */}
         {/* Cards */}
-        {[1, 2, 3].map((card) => (
-          <ForumCard key={card} />
+        {entries.map((card) => (
+          <ForumCard key={card.date} {...card} />
         ))}
         {/* End Cards */}
         <br />
@@ -37,6 +41,6 @@ export const ForumCardList = () => {
         <br />
         <br />
       </div>
-    </React.Fragment>
+    </>
   );
 };

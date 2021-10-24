@@ -5,9 +5,10 @@ import { useLocalStorage } from "../../hooks/useLocalStorage";
 // Design
 import "./ui.css";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const [data, setData] = useLocalStorage("user");
+  const [data, setData] = useLocalStorage("user", "");
   const [nombre, usuario] = data.split(":");
 
   // Show menu (mobile)
@@ -33,18 +34,20 @@ export const Navbar = () => {
       />
       <header className="header">
         <span className="logo ">
-          <h1 className="title is-3 has-text-white">Educalia</h1>
+          <Link to="/">
+            <h1 className="title is-3 has-text-white">Educalia</h1>
+          </Link>
         </span>
         <nav>
           <ul className="nav__links">
             <li>
-              <a href="/">Aprender</a>
+              <Link to="/">Aprender</Link>
             </li>
             <li>
-              <a href="/agenda">Agenda</a>
+              <Link to="/agenda">Agenda</Link>
             </li>
             <li>
-              <a href="/foro">Foro</a>
+              <Link to="/foro">Foro</Link>
             </li>
           </ul>
         </nav>
@@ -67,10 +70,10 @@ export const Navbar = () => {
           &times;
         </p>
         <div className="overlay__content">
-          <a href="/">Aprender</a>
-          <a href="/agenda">Agenda</a>
-          <a href="/foro">Foro</a>
-          <a href="/@usuario">Mi cuenta</a>
+          <Link to="/">Aprender</Link>
+          <Link to="/agenda">Agenda</Link>
+          <Link to="/foro">Foro</Link>
+          <Link to="/@usuario">Mi cuenta</Link>
         </div>
       </div>
     </React.Fragment>

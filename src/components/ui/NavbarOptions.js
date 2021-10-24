@@ -6,6 +6,7 @@ import { FaUserAlt } from 'react-icons/fa'
 import { AiFillMessage } from 'react-icons/ai'
 import { MdSend } from 'react-icons/md'
 import { FaBook } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export const NavbarOptions = ({ viewMenu, setViewMenu }) => {
   return (
@@ -29,9 +30,9 @@ export const NavbarOptions = ({ viewMenu, setViewMenu }) => {
                     <div className="column is-1">
                       <FaUserAlt />
                     </div>
-                    <a href="/@usuario" className="column is-1">
+                    <Link to="/@usuario" className="column is-1">
                       Perfil
-                    </a>
+                    </Link>
                   </div>
                   {/* End Categoria */}
                 

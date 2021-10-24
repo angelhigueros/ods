@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 //Design
@@ -12,14 +13,14 @@ export const UserCard = () => {
   return (
     <>
       <div className="UserCard-container">
-        <a href={`/@${usuario}`}>
+        <Link to={`/@${usuario}`}>
           <figure class="image is-96x96">
             <img
               class="image is-96x96 is-rounded"
               src="https://bulma.io/images/placeholders/128x128.png"
             />
           </figure>
-        </a>
+        </Link>
 
         <div>
           <span className="subtitle is-4">

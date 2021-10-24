@@ -1,40 +1,40 @@
-import React from 'react'
+import React from "react";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 //Design
-import { AiFillHeart, AiFillMessage } from 'react-icons/ai'
+import { AiFillMessage } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Posts = () => {
+  const [portafolio, setPortafolio] = useLocalStorage("portafolio", []);
+
   return (
     <React.Fragment>
       <div className="column is-12">
-        <span className="title is-4">Publicaciones</span>
+        <span className="title is-4">Portafolio</span>
         <hr />
-        {[1, 2, 3, 4, 5].map(contribution => (
-          <a
-          href="/hilo/10"
-            key={contribution}
+        {portafolio.map((item) => (
+          <Link to={item.title}
+            key={item.title}
             className="columns box mb-6"
-            style={{ maxHeight: '150px', overflow: 'hidden' }}>
+            style={{ maxHeight: "150px", overflow: "hidden" }}
+          >
             <div className="column is-8">
               <span className="subtitle is-5">
-                <strong> Curso matematicas aplicada I</strong>
+                <strong> {item.title}</strong>
               </span>
               <br />
             </div>
+           
             <div className="column is-2">
-              <a href="/">
-                <AiFillHeart size={30} className="has-text-danger" /> 25
-              </a>
+              <Link to="/">
+                <AiFillMessage size={30} className="has-text-link" />
+              </Link>
             </div>
-            <div className="column is-2">
-              <a href="/">
-                <AiFillMessage size={30} className="has-text-link" /> 15
-              </a>
-            </div>
-          </a>
+          </Link>
         ))}
         {/* End Contribution */}
       </div>
     </React.Fragment>
-  )
-}
+  );
+};
