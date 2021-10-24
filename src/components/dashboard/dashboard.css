@@ -56,3 +56,72 @@
   padding-bottom: 15px;
   padding-right: 10px;
 }
+
+
+/* Oportunities */
+
+.Oportunities-container {
+  margin-top: 70px;
+  padding-left: 50px;
+}
+
+.OportunitiesCard-list {
+  z-index: 0;
+  width: 100% !important;
+  display: flex;
+  justify-content: space-around !important;
+  flex-wrap: wrap;
+}
+
+.OportunitiesCard {
+  margin: 30px auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.OportunitiesCard .OportunitiesCard_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.OportunitiesCard .OportunitiesCard_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.OportunitiesCard .OportunitiesCard_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -150px;
+  height: 40px;
+}
+
+.OportunitiesCard:hover {
+  transform: scale(0.95, 0.95);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .OportunitiesCard-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}

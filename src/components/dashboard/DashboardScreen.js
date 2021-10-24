@@ -4,6 +4,7 @@ import { AppsList } from "./AppsList";
 
 import "./dashboard.css";
 import { ForumCardList } from "./ForumCardList";
+import { Oportunities } from "./Oportunities";
 import { UserCard } from "./UserCard";
 
 export const DashboardScreen = () => {
@@ -16,7 +17,7 @@ export const DashboardScreen = () => {
           {/* <Goals /> */}
         </div>
         <div className="column is-9">
-          {/* <Watching /> */}
+          <Oportunities />
           <br />
           <ForumCardList />
           {/* <Tools /> */}

@@ -41,9 +41,6 @@ export const Navbar = () => {
               <a href="/agenda">Agenda</a>
             </li>
             <li>
-              <a href="/oportunidades">Oportunidades</a>
-            </li>
-            <li>
               <a href="/foro">Foro</a>
             </li>
           </ul>
@@ -69,7 +66,6 @@ export const Navbar = () => {
         <div className="overlay__content">
           <a href="/">Aprender</a>
           <a href="/agenda">Agenda</a>
-          <a href="/oportunidades">Oportunidades</a>
           <a href="/foro">Foro</a>
           <a href="/@usuario">Mi cuenta</a>
         </div>
