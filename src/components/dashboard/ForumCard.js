@@ -23,7 +23,7 @@ export const ForumCard = () => {
                 <strong>Nombre completo</strong> <small>@usuario</small>
                 <small>12 horas</small>
                 <br />
-                <span className="subtitle is-3">Nombre del foro</span>
+                <span className="subtitle is-3">Titulo</span>
                 <br />
                 <br />
                 <div class="tags">
@@ -38,11 +38,7 @@ export const ForumCard = () => {
               </p>
             </div>
           </div>
-          <div class="media-right has-text-danger">
-            <div className="FormCard_favorite is-size-5">
-              150 <AiFillHeart size={50} />
-            </div>
-          </div>
+          
         </article>
       </a>
     </React.Fragment>

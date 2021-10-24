@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 //Design
 import "./profile.css";
 
 export const Hero = () => {
+  const [data, setData] = useLocalStorage("user");
+
+  const [nombre, usuario] = data.split(":");
 
   const [user, setUser] = useState({
-    username: "usuario",
-    score: 15,
-    university: "UVG",
-    career: "CCTI",
+    username: usuario,
+    score: 100,
+    university: nombre,
   });
 
   return (
@@ -21,7 +24,7 @@ export const Hero = () => {
             <div class="column is-12">
               <figure className="image is-3by1">
                 <img
-                  src="https://bulma.io/images/placeholders/256x256.png"
+                  src="https://wallpaperaccess.com/full/1111946.jpg"
                   alt="Cover"
                 />
               </figure>
@@ -55,13 +58,6 @@ export const Hero = () => {
               <button className="button is-success is-small">
                 {user.university}
               </button>
-               
-              <button className="button is-info is-small">{user.career}</button>
-               {/* <button className="button is-dark">Bíografia</button>   */}
-              {/* <button className="button is-success">Portafolio</button> */}
-            </div>
-            <div className="level-right">
-              <button className="button is-info">Editar</button>
             </div>
           </div>
         </section>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+
 
 export const Info = () => {
   return (
@@ -14,5 +15,5 @@ export const Info = () => {
         </p>
       </div>
     </React.Fragment>
-  )
-}
+  );
+};

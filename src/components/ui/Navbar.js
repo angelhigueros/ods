@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { NavbarOptions } from "./NavbarOptions";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 // Design
-import Logo from "../../assets/img/logo.png";
 import "./ui.css";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 export const Navbar = () => {
+  const [data, setData] = useLocalStorage("user");
+  const [nombre, usuario] = data.split(":");
+
   // Show menu (mobile)
   const handleMenu = () => {
     const overlay = document.getElementById("overlay");
@@ -29,9 +32,9 @@ export const Navbar = () => {
         handleSession={handleSession}
       />
       <header className="header">
-        <a className="logo" href="/">
-          <h2>Educalia</h2>
-        </a>
+        <span className="logo ">
+          <h1 className="title is-3 has-text-white">Educalia</h1>
+        </span>
         <nav>
           <ul className="nav__links">
             <li>
@@ -50,7 +53,7 @@ export const Navbar = () => {
             onClick={() => setViewMenu(true)}
             className="Navbar-menu-container"
           >
-            <span>Nombre completo</span>
+            <span>{nombre}</span>
             <IoMdArrowDropdown size={50} />
           </span>
         </span>

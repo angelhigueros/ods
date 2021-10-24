@@ -26,7 +26,7 @@ export const AppsList = () => {
         <a className="LibraryItem-container scrollbar">
           {[1, 2, 3, 4, 5].map(course => (
             <a
-              href="/matematica"
+              href="https://www.youtube.com/channel/UC0u3Jl3x6e6i5DQlyLObsgg"
               key={course}
               className="LibraryItem-item has-text-dark">
               <figure class="image is-64x64">
