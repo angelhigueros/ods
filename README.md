@@ -5,7 +5,7 @@
 - Ofrecer una solución completa de servicios de preparación gratuita para preparse para la universidad, ademas de ofrecer foros en los cuales se pueden encontrar ofertas de becas, trabajo y voluntariado. 
 
 
-###Characters
+### Characters
 
 - Acceso a cursos de todo tipo
 - Foros
@@ -38,7 +38,7 @@ Educalia es una aplicación pensada principalmente para funcionar en computadora
 
 
 
-###Creditos
+### Creditos
 Para el desarrollo de esta aplicación de utilizaron las siguientes tecnologias
 - React Js
 - Electron
