@@ -5,7 +5,7 @@
 - Ofrecer una solución completa de servicios de preparación gratuita para preparse para la universidad, ademas de ofrecer foros en los cuales se pueden encontrar ofertas de becas, trabajo y voluntariado. 
 
 
-### Characters
+### Característica
 
 - Acceso a cursos de todo tipo
 - Foros
